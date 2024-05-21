@@ -49,26 +49,14 @@ const MainContent = () => {
               <div className="killer-right">
                 <div className="killer-details">
                   <p><strong>TLDR:</strong> {killer.TLDR}</p>
-                  <p><strong>strength:</strong> {killer.strength || 'undefined'}</p>
-                  <p><strong>weakness:</strong> {killer.weakness || 'undefined'}</p>
+                  <p><strong>Abilities:</strong> {killer.abilities || 'undefined'}</p>
+                  <p><strong>Playstyle:</strong> {killer.playstyle || 'undefined'}</p>
                   {killer.alias && <p><strong>Alias:</strong> {killer.alias}</p>}
                 </div>
               </div>
             </div>
           ))}
         </div>
-      </section>
-      <section id="loadouts">
-        <h2>Loadouts</h2>
-        {/* Loadout content will go here */}
-      </section>
-      <section id="maps">
-        <h2>Maps</h2>
-        {/* Maps content will go here */}
-      </section>
-      <section id="guides">
-        <h2>Guides</h2>
-        {/* Guides content will go here */}
       </section>
     </div>
   );
