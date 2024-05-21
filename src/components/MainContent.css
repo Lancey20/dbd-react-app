@@ -1,34 +1,20 @@
-/* General Styles */
-body {
-  height: 100vh;
-  margin: 0;
-  background: 
-      radial-gradient(circle, rgba(59, 68, 95, 0.8) 10%, rgba(3, 3, 3, 0.9) 100%), 
-      linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.6) 50%);
-  background-blend-mode: multiply;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
+/* Move main content-related styles from App.css to here */
 .main-content {
     margin-left: 200px;
     padding: 15px;
     display: flex;
     flex-direction: column;
-    width: calc(100% - 230px);
+    width: calc(100% - 200px);
 }
 
-/* Search Bar Styles */
-#searchBar {
-    width: 80%;
-    padding: 10px;
-    margin: 20px auto;
-    display: block;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 /* Killer Container Styles */
@@ -37,7 +23,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 5px;
-    margin-left: 10px;
 }
 
 /* Killer Box Styles */
@@ -57,7 +42,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Left Section of Killer Box */
 .killer-left {
     display: flex;
     flex-direction: column;
@@ -68,7 +52,6 @@ body {
     box-sizing: border-box; /* Include padding in the height */
 }
 
-/* Right Section of Killer Box */
 .killer-right {
     display: flex;
     flex-direction: column;
@@ -81,7 +64,6 @@ body {
     height: 100%; /* Take the full height of the killer box */
 }
 
-/* Killer Details */
 .killer-details {
     width: 100%; /* Make sure the text field takes the full width */
     text-align: left; /* Align text to the left */
@@ -94,7 +76,6 @@ body {
     box-sizing: border-box; /* Include padding in the element's width and height */
 }
 
-/* Killer Name */
 .killer-name {
     font-size: 1.2em;
     text-align: center; /* Center text */
@@ -102,7 +83,6 @@ body {
     padding-top: 5px; /* Add padding to the top */
 }
 
-/* Killer Image */
 .killer-image {
     width: auto;
     height: 100%; /* Ensure the image fits within the height of the container */
@@ -110,7 +90,6 @@ body {
     object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
-/* Killer Info and Stats */
 .killer-info, .killer-stats {
     margin-bottom: 5px;
 }
@@ -149,47 +128,14 @@ html {
     font-family: 'Rock Salt', cursive;
 }
 
-section {
-  margin-bottom: 50px;
-}
-
-section h2 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-/* Sidebar Styles */
-.sidebar {
-    width: 200px;
-    background-color: #111;
-    color: white;
-    padding: 15px;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-
-.sidebar h2 {
-    text-align: center;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    padding: 8px;
-    text-align: center;
-}
-
-.sidebar ul li a {
-    color: white;
-    text-decoration: none;
+/* Search Bar Styles */
+#searchBar {
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
     display: block;
-}
-
-.sidebar ul li a:hover {
-    background-color: #575757;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
