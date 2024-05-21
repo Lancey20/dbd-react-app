@@ -23,8 +23,8 @@ const MainContent = () => {
 
   const filteredKillers = killers.filter(killer => {
     const killerName = killer.name.toLowerCase();
-    const killerAlias = killer.alias ? killer.alias.toLowerCase() : '';
-    return killerName.includes(searchTerm) || killerAlias.includes(searchTerm);
+    const aliases = killer.alias.map(alias => alias.toLowerCase());
+    return killerName.includes(searchTerm) || aliases.some(alias => alias.includes(searchTerm));
   });
 
   return (
@@ -32,10 +32,10 @@ const MainContent = () => {
       <section id="killers">
         <h2>Killers</h2>
         <input
-        type="text"
-        id="searchBar"
-        placeholder="Search Killers..."
-        onChange={handleSearch}
+          type="text"
+          id="searchBar"
+          placeholder="Search Killers..."
+          onChange={handleSearch}
         />
         <div id="killerContainer">
           {filteredKillers.map(killer => (
@@ -51,7 +51,7 @@ const MainContent = () => {
                   <p><strong>TLDR:</strong> {killer.TLDR}</p>
                   <p><strong>Abilities:</strong> {killer.abilities || 'undefined'}</p>
                   <p><strong>Playstyle:</strong> {killer.playstyle || 'undefined'}</p>
-                  {killer.alias && <p><strong>Alias:</strong> {killer.alias}</p>}
+                  <p><strong>Alias:</strong> {killer.alias.join(', ')}</p>
                 </div>
               </div>
             </div>

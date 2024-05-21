@@ -1,256 +1,291 @@
 const killers = [
     {
         "name": "Trapper",
-        "TLDR": "WATCH THE GROUND! Look for bear traps, especially in loops or on the other side of vaults. If Trapper is putting a trap in a loop, run to a different loop. The less you let him set up, either by forcing chases or a full generator rush, the better. ",
+        "TLDR": "WATCH THE GROUND! Disable all the traps you see. If Trapper places trap while you are looping him, run away to next loop. Take advantage of the high setup time of Trapper.",
         "strength": "Trapper excels at controlling the map. A good trapper will only let you loop them in the area they want. However, Trapper is a very weak killer overall. ",
         "weakness": "High setup time.",
-        "image": "trapper.png"
+        "image": "trapper.png",
+        "alias": ["Trapper"]
     },
     {
         "name": "Wraith",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "wraith.png"
+        "image": "wraith.png",
+        "alias": ["Wraith"]
     },
     {
         "name": "Hillbilly",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "hillbilly.png"
+        "image": "hillbilly.png",
+        "alias": ["Hillbilly", "Leatherface"]
     },
     {
         "name": "Nurse",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "nurse.png"
+        "image": "nurse.png",
+        "alias": ["Nurse"]
     },
     {
         "name": "Shape",
-        "alias": "Michael Myers",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "shape.png"
+        "image": "shape.png",
+        "alias": ["Michael Myers", "Halloween"]
     },
     {
         "name": "Hag",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "hag.png"
+        "image": "hag.png",
+        "alias": ["Hag"]
     },
     {
         "name": "Doctor",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "doctor.png"
+        "image": "doctor.png",
+        "alias": ["Doctor", "Shocker"]
     },
     {
         "name": "Huntress",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "huntress.png"
+        "image": "huntress.png",
+        "alias": ["Huntress", "Axe Thrower"]
     },
     {
         "name": "Cannibal",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "cannibal.png"
+        "image": "cannibal.png",
+        "alias": ["Cannibal", "Bubba"]
     },
     {
         "name": "Nightmare",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "nightmare.png"
+        "image": "nightmare.png",
+        "alias": ["Nightmare", "Freddie Krueguer"]
     },
     {
         "name": "Pig",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "pig.png"
+        "image": "pig.png",
+        "alias": ["Pig", "Jigsaw"]
     },
     {
         "name": "Clown",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "clown.png"
+        "image": "clown.png",
+        "alias": ["Clown"]
     },
     {
         "name": "Spirit",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "spirit.png"
+        "image": "spirit.png",
+        "alias": ["Spirit"]
     },
     {
         "name": "Legion",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "legion.png"
+        "image": "legion.png",
+        "alias": ["Legion"]
     },
     {
         "name": "Plague",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "plague.png"
+        "image": "plague.png",
+        "alias": ["Plague"]
     },
     {
         "name": "Ghost Face",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "ghostface.png"
+        "image": "ghostface.png",
+        "alias": ["Ghost Face", "Scream"]
     },
     {
         "name": "Demogorgon",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "demogorgon.png"
+        "image": "demogorgon.png",
+        "alias": ["Demogorgon", "Dog"]
     },
     {
         "name": "Oni",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "oni.png"
+        "image": "oni.png",
+        "alias": ["Oni", "Samurai"]
     },
     {
         "name": "Deathslinger",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "deathslinger.png"
+        "image": "deathslinger.png",
+        "alias": ["Deathslinger"]
     },
     {
         "name": "Executioner",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "executioner.png"
+        "image": "executioner.png",
+        "alias": ["Executioner", "Cone head", "Pyramid head"]
     },
     {
         "name": "Blight",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "blight.png"
+        "image": "blight.png",
+        "alias": ["Blight", "Speedy", "Flash"]
     },
     {
         "name": "Twins",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "twins.png"
+        "image": "twins.png",
+        "alias": ["Twins"]
     },
     {
         "name": "Trickster",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "trickster.png"
+        "image": "trickster.png",
+        "alias": ["Trickster", "Knife thrower"]
     },
     {
         "name": "Nemesis",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "nemesis.png"
+        "image": "nemesis.png",
+        "alias": ["Nemesis", "Zombies"]
     },
     {
         "name": "Cenobite",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "cenobite.png"
+        "image": "cenobite.png",
+        "alias": ["Cenobite", "Pinhead"]
     },
     {
         "name": "Artist",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "artist.png"
+        "image": "artist.png",
+        "alias": ["Artist", "Crows"]
     },
     {
         "name": "Onryo",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "onryo.png"
+        "image": "onryo.png",
+        "alias": ["Onryo", "Tv girl"]
     },
     {
         "name": "Dredge",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "dredge.png"
+        "image": "dredge.png",
+        "alias": ["Dredge"]
     },
     {
         "name": "Mastermind",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "mastermind.png"
+        "image": "mastermind.png",
+        "alias": ["Mastermind", "Wesker"]
     },
     {
         "name": "Knight",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "knight.png"
+        "image": "knight.png",
+        "alias": ["Knight"]
     },
     {
         "name": "Skull Merchant",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "skullmerchant.png"
+        "image": "skullmerchant.png",
+        "alias": ["Skull Merchant"]
     },
     {
         "name": "Singularity",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "singularity.png"
+        "image": "singularity.png",
+        "alias": ["Singularity"]
     },
     {
         "name": "Xenomorph",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "xenomorph.png"
+        "image": "xenomorph.png",
+        "alias": ["Xenomorph", "Alien"]
     },
     {
         "name": "Good Guy",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "goodguy.png"
+        "image": "goodguy.png",
+        "alias": ["Good Guy", "Chucky"]
     },
     {
         "name": "Unknown",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "unknown.png"
+        "image": "unknown.png",
+        "alias": ["Unknown"]
     },
     {
         "name": "Vecna",
         "TLDR": "Can become invisible and move faster.",
         "strength": "Excellent at ambush attacks.",
         "weakness": "Becomes visible near survivors.",
-        "image": "vecna.png"
+        "image": "vecna.png",
+        "alias": ["Vecna", "Stranger Things", "Dnd"]
     }
 ];
 
