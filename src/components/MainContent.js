@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import '../App.css';
 import killers from './data';
 
@@ -29,6 +30,11 @@ const MainContent = () => {
 
   return (
     <div className="main-content">
+      <Helmet>
+        <title>Dead by Daylight Killer Counters</title>
+        <meta name="description" content="Find detailed guides and counter strategies for all dbd killers"/>
+        <meta name="keywords" content="Dead by Daylight, DBD, dbd, killers, guide, counters, tips" />
+      </Helmet>
       <section id="killers">
         <h2>Killers</h2>
         <input
@@ -48,9 +54,9 @@ const MainContent = () => {
               </div>
               <div className="killer-right">
                 <div className="killer-details">
-                  <p><strong>TLDR:</strong> {killer.TLDR}</p>
-                  <p><strong>Abilities:</strong> {killer.abilities || 'undefined'}</p>
-                  <p><strong>Playstyle:</strong> {killer.playstyle || 'undefined'}</p>
+                  <p><strong>Counter:</strong> {killer.TLDR}</p>
+                  <p><strong>Abilities:</strong> {killer.strength || 'undefined'}</p>
+                  <p><strong>Playstyle:</strong> {killer.weakness || 'undefined'}</p>
                   <p><strong>Alias:</strong> {killer.alias.join(', ')}</p>
                 </div>
               </div>

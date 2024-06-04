@@ -114,7 +114,7 @@ body {
 .killer-image {
     width: auto;
     height: 100%; /* Ensure the image fits within the height of the container */
-    border-radius: 5px;
+    border-radius: 10px;
     object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
